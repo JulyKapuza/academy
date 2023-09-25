@@ -1,6 +1,6 @@
 <template>
-  <div>
-homePage
+  <div >
+Content
   </div>
 </template>
 
