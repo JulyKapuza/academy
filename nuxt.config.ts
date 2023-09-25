@@ -5,5 +5,8 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/academy/'
   },
+    plugins: [
+    '~/plugins/mdi.ts'
+  ],
  
 })
