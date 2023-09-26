@@ -5,14 +5,14 @@
       class="flex items-center gap-2 bg-yellow h-[26px] rounded-tl-[20px] rounded-tr-[20px] text-black mb-[11px] px-[20px] md:px-[59px] font-['Raleway']"
     >
       <div>
-        <img src="../assets/img/arrow.png" height="16" />
+        <img src="../public/file/arrow.png" height="16" />
       </div>
       <p class="text-[12px] md:text-[15px] font-bold leading-[110%]">
         ХІТ ПРОДАЖУ
       </p>
 
       <div>
-        <img src="../assets/img/arrow.png" height="16" />
+        <img src="../public/file/arrow.png" height="16" />
       </div>
     </div>
     <div v-else class="h-[26px] mb-[11px]"></div>

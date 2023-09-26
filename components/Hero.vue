@@ -19,25 +19,25 @@
         class="w-full mb-5 flex !overflow-visible pb-4 pt-5"
       >
         <swiper-slide
-          ><img src="../assets/img/prof.png" alt="" height="594" width="290"
+          ><img src="../public/file/prof.png" alt="" height="594" width="290"
         /></swiper-slide>
         <swiper-slide
           ><img
-            src="../assets/img/lec.png"
+            src="../public/file/lec.png"
             alt=""
             height="594"
             width="290"
             class="-mt-[27px] mb-[27px]" /></swiper-slide
         ><swiper-slide>
-          <img src="../assets/img/increase.png" alt="" height="594" width="290"
+          <img src="../public/file/increase.png" alt="" height="594" width="290"
         /></swiper-slide>
       </swiper>
     </div>
 
     <div class="hidden md:flex justify-center gap-[26px] pt-[47px] mb-10">
-      <img src="../assets/img/prof.png" alt="" height="594" />
-      <img src="../assets/img/lec.png" alt="" class="-mt-[47px] mb-[47px]" />
-      <img src="../assets/img/increase.png" alt="" />
+      <img src="../public/file/prof.png" alt="" height="594" />
+      <img  src="../public/file/lec.png" alt="" class="-mt-[47px] mb-[47px]" />
+      <img src="../public/file/increase.png" alt="" />
     </div>
     <div class="md:w-[889px] text-center mx-auto px-[60px]">
       <p class="text-4 sm:text-[23px] font-bold leading-[150%]">
