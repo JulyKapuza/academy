@@ -1,6 +1,8 @@
 <template>
   <button
-    class="py-[18px] px-8 bg-blue text-white rounded-[32px] text-[17px] font-bold"
+  :type="type"
+    class="py-[18px] px-8 bg-blue text-white rounded-[32px] text-[17px] font-bold hover:bg-[#3333A7]"
+    :class="{'bg-black/[.5] pointer-events-none': disabled} "
   >
     <slot></slot>
   </button>
@@ -11,6 +13,10 @@ const props = defineProps({
     type: String,
     default: "button",
   },
+   disabled: {
+    type: Boolean,
+    default: false
+  }
 });
 </script>
 

@@ -51,10 +51,10 @@ const props = defineProps({
         type: String,
     },
     price: {
-        type: String,
+        type: Number,
     },
     currentPrice: {
-        type: String,
+        type: Number,
     }
 });
 </script>

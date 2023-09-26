@@ -6,7 +6,8 @@ export default defineNuxtConfig({
     baseURL: '/academy/'
   },
     plugins: [
-    '~/plugins/mdi.ts'
+      '~/plugins/mdi.ts',
+       '~/plugins/notifications.client.ts',
   ],
  
 })

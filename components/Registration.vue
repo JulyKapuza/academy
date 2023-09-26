@@ -1,11 +1,10 @@
 <template>
-    <div class="py-8 mx-auto">
-        <application/>
-        <bonuses/>
-    </div>
+  <div class="py-8 md:flex justify-center">
+    <application />
+    <bonuses />
+  </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped></style>

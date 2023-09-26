@@ -1,14 +1,75 @@
 <template>
   <div class="bg-grey">
-    <div class="w-[800px] mx-auto mb-10">
-      <h2 class="text-[42px] font-bold text-center mb-4">
+    <div class="md:w-[800px] mx-auto mb-10">
+      <h2 class="text-[24px] text-[42px] font-bold text-center mb-4">
         Переплата На Вищу Бухгалтерську Онлайн-Академію
       </h2>
       <p class="text-[21px] font-bold text-center">
         Оберіть свій тарифний пакет:
       </p>
+      <div class="sm:hidden flex justify-center">
+        <timer />
+      </div>
     </div>
-    <div class="px-[32px] w-[1140px] mx-auto">
+    <div class="sm:hidden">
+      <variant
+        :top="true"
+        :title="`СУПЕРПРОФЕСІОНАЛ`"
+        :terms="`8 професійних курсів за ціною 2`"
+        :price="1079"
+        :currentPrice="679"
+      />
+      <div
+        class="flex text-[15px] leading-[140%] "
+        v-for="item in filter"
+        :key="item.id"
+      >
+        <div class="flex items-center justify-center py-2">
+          <mdicon name="check" size="16" />
+          <div class="w-[320px] ml-2">
+            <span
+              v-if="item.new"
+              class="text-white bg-blue rounded-[3px] py-[3px] px-[5px] me-2"
+              >NEW</span
+            >
+            {{ item.text }}
+            <span class="text-blue block" :class="{ inline: item.inline }">{{
+              item.period
+            }}</span>
+          </div>
+        </div>
+      </div>
+      <count />
+      <variant
+      class="bg-white rounded-tr-[20px] rounded-tl-[20px]"
+              :title="`ПРЕМІУМ`"
+              :terms="`8 професійних курсів за ціною 2 + Бухгалтерська Відеоплатформа №1`"
+              :price="1079"
+              :currentPrice="679"
+            />
+               <div
+          class="flex text-[15px] leading-[140%] "
+          v-for="item in data"
+          :key="item.id"
+        >
+          <div class="flex items-center justify-center bg-white py-2">
+            <mdicon name="check" size="16" />
+            <div class="w-[320px] ml-2">
+              <span
+                v-if="item.new"
+                class="text-white bg-blue rounded-[3px] py-[3px] px-[5px] me-2"
+                >NEW</span
+              >
+              {{ item.text }}
+              <span class="text-blue block" :class="{ inline: item.inline }">{{
+                item.period
+              }}</span>
+            </div>
+          </div>
+        </div>
+         <count />
+    </div>
+    <div class="hidden sm:block px-[32px] max-w-[1140px] mx-auto">
       <div class="flex text-sm">
         <div class="flex flex-col gap-[14px] w-1/3 items-center justify-center">
           <timer />
@@ -17,19 +78,38 @@
           </div>
         </div>
         <div class="flex w-1/3 items-center justify-center">
-          <variant :top="true" :title="`СУПЕРПРОФЕСІОНАЛ`" :terms="`8 професійних курсів за ціною 2`" :price="1079"
-            :currentPrice="679" />
+          <variant
+            :top="true"
+            :title="`СУПЕРПРОФЕСІОНАЛ`"
+            :terms="`8 професійних курсів за ціною 2`"
+            :price="1079"
+            :currentPrice="679"
+          />
         </div>
-        <div class="flex w-1/3 items-center justify-center bg-blue/[.1] rounded-tl-[20px] rounded-tr-[20px]">
-          <variant :title="`ПРЕМІУМ`" :terms="`8 професійних курсів за ціною 2 + Бухгалтерська Відеоплатформа №1`"
-            :price="1079" :currentPrice="679" />
+        <div
+          class="flex w-1/3 items-center justify-center bg-blue/[.1] rounded-tl-[20px] rounded-tr-[20px]"
+        >
+          <variant
+            :title="`ПРЕМІУМ`"
+            :terms="`8 професійних курсів за ціною 2 + Бухгалтерська Відеоплатформа №1`"
+            :price="1079"
+            :currentPrice="679"
+          />
         </div>
       </div>
 
-      <div class="flex text-xs text-[15px] leading-[140%] border-b border-black/[.1]" v-for="item in data" :key="item.id">
+      <div
+        class="flex text-xs text-[15px] leading-[140%] border-b border-black/[.1] max-w-[1140px]"
+        v-for="item in data"
+        :key="item.id"
+      >
         <div class="w-1/3 items-center justify-center py-2">
           <div class="320px">
-            <span v-if="item.new" class="text-white bg-blue rounded-[3px] py-[3px] px-[5px] me-2">NEW</span>
+            <span
+              v-if="item.new"
+              class="text-white bg-blue rounded-[3px] py-[3px] px-[5px] me-2"
+              >NEW</span
+            >
             {{ item.text }}
             <span class="text-blue block" :class="{ inline: item.inline }">{{
               item.period
@@ -40,51 +120,39 @@
           <mdicon v-if="item.standart" name="check" size="32" />
           <mdicon v-else name="close" size="32" />
         </div>
-        <div class="flex w-1/3 items-center justify-center text-red bg-blue/[.1]">
+        <div class="flex w-1/3 items-center justify-center bg-blue/[.1]">
           <mdicon v-if="item.premium" name="check" size="32" />
           <mdicon v-else name="close" size="32" />
         </div>
       </div>
       <div class="flex">
-        <div class="flex flex-col gap-[14px] w-1/3 items-center justify-center"></div>
-        <div class="flex flex-col items-center w-1/3 items-center justify-center pt-6 pb-3">
-          <div class="flex items-center justify-center mb-3">
-            <div class="mr-[26px]">
-              <p class="text-[13px] text-[#979797] line-through">
-                1079 грн/міс
-              </p>
-              <p class="text-[17px] font-bold">679 грн/міс.</p>
-            </div>
-            <div
-              class="flex items-center justify-center text-[10px] font-bold bg-blue rounded-full text-white w-[34px] h-[34px]">
-              -75%
-            </div>
-          </div>
-          <ui-btn>Завантажити рахунок</ui-btn>
+        <div
+          class="flex flex-col gap-[14px] w-1/3 items-center justify-center"
+        ></div>
+        <div
+          class="flex flex-col w-1/3 items-center justify-center "
+        >
+        <count/>
+         
         </div>
-        <div class="flex flex-col items-center w-1/3 bg-blue/[.1] rounded-bl-[20px] rounded-br-[20px] pt-6 pb-3">
-          <div class="flex items-center justify-center mb-3">
-            <div class="mr-[26px]">
-              <p class="text-[13px] text-[#979797] line-through">
-                1079 грн/міс
-              </p>
-              <p class="text-[17px] font-bold">679 грн/міс.</p>
-            </div>
-            <div
-              class="flex items-center justify-center text-[10px] font-bold bg-blue rounded-full text-white w-[34px] h-[34px]">
-              -75%
-            </div>
-          </div>
-          <ui-btn>Завантажити рахунок</ui-btn>
+        <div
+          class="flex flex-col items-center w-1/3 bg-blue/[.1] rounded-bl-[20px] rounded-br-[20px]"
+        >
+         <count/>
         </div>
       </div>
     </div>
-    <div class="mx-auto mt-[22px] w-[740px] text-center text-[17px] leading-[150%]">
-      <p>Оплачуйте пакети<span class="font-bold">частинами без комісії!</span> </p>
-      <p>Натискайте на кнопку <span class="font-bold">Оплатити карткою</span> та оформлюйте розстрочку</p>
+    <div
+      class="mx-auto mt-[22px] md:w-[740px] text-center text-[17px] leading-[150%]"
+    >
       <p>
-        через PrivatBank або Monobank</p>
-
+        Оплачуйте пакети<span class="font-bold">частинами без комісії!</span>
+      </p>
+      <p>
+        Натискайте на кнопку <span class="font-bold">Оплатити карткою</span> та
+        оформлюйте розстрочку
+      </p>
+      <p>через PrivatBank або Monobank</p>
     </div>
   </div>
 </template>
@@ -182,8 +250,8 @@ const data = [
     premium: true,
   },
 ];
+
+const filter = data.filter((el) => el.standart === true);
 </script>
-
-
 
 <style scoped></style>
