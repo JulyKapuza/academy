@@ -1,5 +1,5 @@
 <template>
-  <div class="py-8 md:flex justify-center">
+  <div class="py-8 lg:flex justify-center">
     <application />
     <bonuses />
   </div>

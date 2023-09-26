@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full  sm:w-[500px] mr-[91px]">
+  <div class="w-full mx-auto sm:w-[500px] mr-[91px]">
     <h4 class="text-[23px] font-bold mb-6">
       Залиште заявку, і ми підберемо для вас умови зі знижкою
     </h4>
@@ -29,7 +29,7 @@
         "
         @blur="v$.email.$validate()"
       />
-      <div class="mt-5 mb-[64px] md:mb-0">
+      <div class="mt-5 mb-[64px] lg:mb-0">
         <ui-btn
           :disabled="!form.name && !form.phone && !form.email"
           type="submit"
@@ -39,7 +39,6 @@
       </div>
     </form>
   </div>
-
 </template>
 
 <script setup>
@@ -48,7 +47,7 @@ import { useVuelidate } from "@vuelidate/core";
 
 import { useNotification } from "@kyvg/vue3-notification";
 
-const { notify } = useNotification()
+const { notify } = useNotification();
 
 const { rules } = useRules();
 
@@ -67,8 +66,8 @@ const v$ = useVuelidate(
 );
 
 const sendData = async () => {
-  v$.value.$validate()
-  if (v$.value.$invalid) return
+  v$.value.$validate();
+  if (v$.value.$invalid) return;
 
   const dataToSend = {
     name: form.name,

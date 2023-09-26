@@ -1,6 +1,6 @@
 <template>
   <div>
-    <label class="flex items-center px-1">
+    <label class="flex items-center px-1 font-['Raleway']">
       <span class="text-base mb-[7px] text-black">{{ label }}</span>
     </label>
     <div
@@ -9,7 +9,7 @@
     >
       <input
         :value="modelValue"
-        class="block relative w-full px-4 py-3 h-full rounded-[32px] !bg-grey !outline-none transition text-start text-base"
+        class="block relative w-full px-4 py-3 h-full font-['Raleway'] rounded-[32px] !bg-grey !outline-none transition text-start text-base"
         :type="type"
         :placeholder="placeholder"
         ref="input"
@@ -17,7 +17,7 @@
         @blur="emits('blur'), (isFocused = false)"
         @input="emitValue"
       />
-      <div class="absolute text-xs text-red top-[110%] start-0">
+      <div class="absolute text-xs text-red top-[110%] start-0 font-['Raleway']">
         {{ error }}
       </div>
     </div>

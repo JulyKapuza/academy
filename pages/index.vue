@@ -1,19 +1,15 @@
 <template>
-  <div >
-<hero/>
-   <div class="w-screen h-6 sm:h-[104px] bg-grey"></div>
-   <time-line/>
-   <div class="w-screen h-6 sm:h-[104px] bg-grey"></div>
-   <packages/>
+  <div>
+    <hero />
     <div class="w-screen h-6 sm:h-[104px] bg-grey"></div>
-    <registration/>
+    <time-line />
+    <div class="w-screen h-6 sm:h-[104px] bg-grey"></div>
+    <packages />
+    <div class="w-screen h-6 sm:h-[104px] bg-grey"></div>
+    <registration />
   </div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

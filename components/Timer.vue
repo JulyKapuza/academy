@@ -7,7 +7,9 @@
         <span class="text-[15px] text-blue/[.3]">год</span>
       </div>
       <div class="flex items-center flex-col gap-1">
-        <span class="text-[29px] text-blue/[.3]">{{ formatMinute(time) }}:</span>
+        <span class="text-[29px] text-blue/[.3]"
+          >{{ formatMinute(time) }}:</span
+        >
         <span class="text-[15px] text-blue/[.3]">хв</span>
       </div>
       <div class="flex items-center flex-col gap-1">
@@ -18,7 +20,6 @@
   </div>
 </template>
 <script setup>
-
 import { DateTime } from "luxon";
 
 const date = DateTime.fromObject({
@@ -60,7 +61,5 @@ onMounted(() => {
   updateTimer();
 });
 </script>
-
-
 
 <style scoped></style>

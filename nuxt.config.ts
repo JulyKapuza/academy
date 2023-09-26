@@ -9,5 +9,8 @@ export default defineNuxtConfig({
       '~/plugins/mdi.ts',
        '~/plugins/notifications.client.ts',
   ],
+     css: [
+        '~/assets/css/fonts.scss', 
+    ],
  
 })

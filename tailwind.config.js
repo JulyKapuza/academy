@@ -2,6 +2,9 @@
 export default {
   content: [],
   theme: {
+     fontFamily: {
+      default: ['e-Ukraine', 'sans-serif']
+    },
      screens: {
       sm: "640px",
       // => @media (min-width: 640px) { ... }

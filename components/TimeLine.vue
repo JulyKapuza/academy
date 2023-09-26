@@ -6,12 +6,13 @@
     <h2 class="text-[24px] sm:text-[42px] font-bold text-center mb-[58px]">
       Відкрийте для себе найпопулярніші курси
     </h2>
-    <div class="flex sm:block justify-center">
-      
+    <div class="flex sm:block justify-center font-['Raleway']">
       <div
         class="flex flex-col sm:flex-row sm:max-w-[1000px] sm:w-[70%] -ml-20 sm:mx-auto sm:mb-12"
       >
-        <div class="flex text-[16px] md:text-[18px] h-[30%] sm:h-auto sm:w-[30%]">
+        <div
+          class="flex text-[16px] md:text-[18px] h-[30%] sm:h-auto sm:w-[30%]"
+        >
           <div class="w-[116px] sm:w-[135px]">Ціни раннього бронювання</div>
         </div>
 
@@ -20,7 +21,9 @@
             Подорожчання на 10%
           </div>
         </div>
-        <div class="flex justify-center text-[16px] md:text-[18px] h-[20%] sm:w-[25%]">
+        <div
+          class="flex justify-center text-[16px] md:text-[18px] h-[20%] sm:w-[25%]"
+        >
           <div class="w-[116px] sm:w-[135px] sm:text-center">
             Подорожчання на 15%
           </div>

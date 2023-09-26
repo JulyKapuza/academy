@@ -1,7 +1,7 @@
 <template>
-  <section class="pb-6 sm:pb-12 ">
+  <section class="pb-6 sm:pb-12">
     <div class="text-center mb-10">
-      <p class="text-[17px] text-black mb-[22px]">
+      <p class="text-[17px] text-black mb-[22px] font-['Raleway']">
         Вища Бухгалтерська Online-академія
       </p>
       <h1 class="text-[24px] md:text-[42px] font-bold mb-[22px] leading-[150%]">
@@ -10,13 +10,13 @@
       </h1>
       <ui-btn> Обрати навчання >> </ui-btn>
     </div>
-<div  class="md:hidden">
-  <swiper
+    <div class="md:hidden">
+      <swiper
         :slidesPerView="2"
         :spaceBetween="5"
         :centeredSlides="true"
         :modules="modules"
-        class="w-full mb-5 flex !overflow-visible  pb-4 pt-5"
+        class="w-full mb-5 flex !overflow-visible pb-4 pt-5"
       >
         <swiper-slide
           ><img src="../assets/img/prof.png" alt="" height="594" width="290"
@@ -32,15 +32,14 @@
           <img src="../assets/img/increase.png" alt="" height="594" width="290"
         /></swiper-slide>
       </swiper>
-</div>
-    
+    </div>
 
     <div class="hidden md:flex justify-center gap-[26px] pt-[47px] mb-10">
       <img src="../assets/img/prof.png" alt="" height="594" />
       <img src="../assets/img/lec.png" alt="" class="-mt-[47px] mb-[47px]" />
       <img src="../assets/img/increase.png" alt="" />
     </div>
-    <div class="md:w-[889px] text-center mx-auto  px-[60px]">
+    <div class="md:w-[889px] text-center mx-auto px-[60px]">
       <p class="text-4 sm:text-[23px] font-bold leading-[150%]">
         Разом дешевше! Купуйте передплату на Вищу Бухгалтерську Online-Академію
         <span class="text-blue">8 професій за ціною 2</span>

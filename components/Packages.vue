@@ -4,60 +4,70 @@
       <h2 class="text-[24px] text-[42px] font-bold text-center mb-4">
         Переплата На Вищу Бухгалтерську Онлайн-Академію
       </h2>
-      <p class="text-[21px] font-bold text-center">
+      <p class="text-[21px] font-bold text-center font-['Raleway']">
         Оберіть свій тарифний пакет:
       </p>
       <div class="sm:hidden flex justify-center">
         <timer />
       </div>
     </div>
-    <div class="sm:hidden">
-      <variant
-        :top="true"
-        :title="`СУПЕРПРОФЕСІОНАЛ`"
-        :terms="`8 професійних курсів за ціною 2`"
-        :price="1079"
-        :currentPrice="679"
-      />
-      <div
-        class="flex text-[15px] leading-[140%] "
-        v-for="item in filter"
-        :key="item.id"
-      >
-        <div class="flex items-center justify-center py-2">
-          <mdicon name="check" size="16" />
-          <div class="w-[320px] ml-2">
-            <span
-              v-if="item.new"
-              class="text-white bg-blue rounded-[3px] py-[3px] px-[5px] me-2"
-              >NEW</span
-            >
-            {{ item.text }}
-            <span class="text-blue block" :class="{ inline: item.inline }">{{
-              item.period
-            }}</span>
-          </div>
-        </div>
-      </div>
-      <count />
-      <variant
-      class="bg-white rounded-tr-[20px] rounded-tl-[20px]"
-              :title="`ПРЕМІУМ`"
-              :terms="`8 професійних курсів за ціною 2 + Бухгалтерська Відеоплатформа №1`"
-              :price="1079"
-              :currentPrice="679"
-            />
-               <div
-          class="flex text-[15px] leading-[140%] "
-          v-for="item in data"
+
+    <div class="md:hidden">
+      <div class="bg-white rounded-[20px] mb-4">
+        <variant
+          :top="true"
+          :title="`СУПЕРПРОФЕСІОНАЛ`"
+          :terms="`8 професійних курсів за ціною 2`"
+          :price="1079"
+          :currentPrice="679"
+        />
+        <div
+          class="text-[15px] leading-[140%] w-[320px] mx-auto"
+          v-for="item in filter"
           :key="item.id"
         >
-          <div class="flex items-center justify-center bg-white py-2">
+          <div class="flex items-center justify-center py-2 font-['Raleway']">
             <mdicon name="check" size="16" />
             <div class="w-[320px] ml-2">
               <span
                 v-if="item.new"
-                class="text-white bg-blue rounded-[3px] py-[3px] px-[5px] me-2"
+                class="text-white font-['Raleway'] bg-blue rounded-[3px] py-[3px] px-[5px] me-2"
+                >NEW</span
+              >
+              {{ item.text }}
+              <span
+                class="text-blue font-['Raleway'] block"
+                :class="{ inline: item.inline }"
+                >{{ item.period }}</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto w-[255px]">
+          <count />
+        </div>
+      </div>
+      <div class="bg-white rounded-[20px] mb-4">
+        <variant
+          class="bg-white rounded-tr-[20px] rounded-tl-[20px]"
+          :title="`ПРЕМІУМ`"
+          :terms="`8 професійних курсів за ціною 2 + Бухгалтерська Відеоплатформа №1`"
+          :price="1079"
+          :currentPrice="679"
+        />
+        <div
+          class="text-[15px] leading-[140%] w-[320px] mx-auto"
+          v-for="item in data"
+          :key="item.id"
+        >
+          <div
+            class="flex items-center justify-center w-[320px] bg-white py-2 font-['Raleway']"
+          >
+            <mdicon name="check" size="16" />
+            <div class="w-[320px] ml-2">
+              <span
+                v-if="item.new"
+                class="text-white font-['Raleway'] bg-blue rounded-[3px] py-[3px] px-[5px] me-2"
                 >NEW</span
               >
               {{ item.text }}
@@ -67,13 +77,19 @@
             </div>
           </div>
         </div>
-         <count />
+        <div class="mx-auto w-[255px]">
+          <count />
+        </div>
+      </div>
     </div>
-    <div class="hidden sm:block px-[32px] max-w-[1140px] mx-auto">
-      <div class="flex text-sm">
+
+    <div class="hidden md:block px-[32px] max-w-[1140px] mx-auto">
+      <div class="flex text-sm font-['Raleway']">
         <div class="flex flex-col gap-[14px] w-1/3 items-center justify-center">
           <timer />
-          <div class="w-[225px] text-center text-[15px] text-[#15154]">
+          <div
+            class="w-[225px] text-center text-[15px] text-[#15154] font-['Raleway']"
+          >
             (для діючих передплатників додаткова знижка 10%)
           </div>
         </div>
@@ -99,7 +115,7 @@
       </div>
 
       <div
-        class="flex text-xs text-[15px] leading-[140%] border-b border-black/[.1] max-w-[1140px]"
+        class="flex text-xs font-['Raleway'] text-[15px] leading-[140%] border-b border-black/[.1] max-w-[1140px]"
         v-for="item in data"
         :key="item.id"
       >
@@ -129,24 +145,21 @@
         <div
           class="flex flex-col gap-[14px] w-1/3 items-center justify-center"
         ></div>
-        <div
-          class="flex flex-col w-1/3 items-center justify-center "
-        >
-        <count/>
-         
+        <div class="flex flex-col w-1/3 items-center justify-center">
+          <count />
         </div>
         <div
           class="flex flex-col items-center w-1/3 bg-blue/[.1] rounded-bl-[20px] rounded-br-[20px]"
         >
-         <count/>
+          <count />
         </div>
       </div>
     </div>
     <div
-      class="mx-auto mt-[22px] md:w-[740px] text-center text-[17px] leading-[150%]"
+      class="mx-auto mt-[22px] md:w-[740px] text-center font-['Raleway'] text-[17px] leading-[150%]"
     >
       <p>
-        Оплачуйте пакети<span class="font-bold">частинами без комісії!</span>
+        Оплачуйте пакети<span class="font-bold"> частинами без комісії!</span>
       </p>
       <p>
         Натискайте на кнопку <span class="font-bold">Оплатити карткою</span> та
