@@ -1,1 +1,0 @@
-import{_ as t,k as o,l as e,F as a,j as c}from"./entry.4726b6c9.js";const l={},r=e("header",{class:"h-[64px] bg-grey"},null,-1),n={class:"mx-auto px-4"},_=e("footer",{class:"h-[104px] bg-grey"},null,-1);function d(s,f){return c(),o("div",null,[r,e("div",n,[a(s.$slots,"default")]),_])}const i=t(l,[["render",d]]);export{i as default};
