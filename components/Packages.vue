@@ -156,7 +156,7 @@
       </div>
     </div>
     <div
-      class="mx-auto mt-[22px] md:w-[740px] text-center font-['Raleway'] text-[17px] leading-[150%]"
+      class="mx-auto mt-[22px] w-[320px] md:w-[740px] text-center font-['Raleway'] text-[17px] leading-[150%]"
     >
       <p>
         Оплачуйте пакети<span class="font-bold"> частинами без комісії!</span>

@@ -1,5 +1,5 @@
 <template>
-  <div class="md:w-[500px] mx-auto">
+  <div class="md:w-[500px] mx-auto px-4">
     <h4 class="text-[23px] font-bold mb-6">
       З передплатою Академії ви отримаєте:
     </h4>

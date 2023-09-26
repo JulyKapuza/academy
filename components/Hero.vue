@@ -4,7 +4,7 @@
       <p class="text-[17px] text-black mb-[22px] font-['Raleway']">
         Вища Бухгалтерська Online-академія
       </p>
-      <h1 class="text-[24px] md:text-[42px] font-bold mb-[22px] leading-[150%]">
+      <h1 class="text-[24px] md:text-[42px] font-bold mb-[22px] leading-[150%] px-10">
         <span class="block w-[100%]">Підвищення кваліфікації</span>
         та профперепідготовка для бухгалтерів
       </h1>
