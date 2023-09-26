@@ -24,7 +24,7 @@
         <div
           class="text-[15px] leading-[140%] w-[320px] mx-auto"
           v-for="item in filter"
-          :key="item.id"
+          :key="item.text"
         >
           <div class="flex items-center justify-center py-2 font-['Raleway']">
             <mdicon name="check" size="16" />
@@ -58,7 +58,7 @@
         <div
           class="text-[15px] leading-[140%] w-[320px] mx-auto"
           v-for="item in data"
-          :key="item.id"
+          :key="item.text"
         >
           <div
             class="flex items-center justify-center w-[320px] bg-white py-2 font-['Raleway']"
@@ -117,7 +117,7 @@
       <div
         class="flex text-xs font-['Raleway'] text-[15px] leading-[140%] border-b border-black/[.1] max-w-[1140px]"
         v-for="item in data"
-        :key="item.id"
+        :key="item.text"
       >
         <div class="w-1/3 items-center justify-center py-2">
           <div class="320px">
