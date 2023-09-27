@@ -36,7 +36,7 @@
           </div>
         </div>
       </div>
-      <div class="hidden sm:block w-[70%] max-w-[1000px] mb-10 mx-auto">
+      <div class="hidden sm:block w-[70%] max-w-[1000px] mb-10 mx-auto pointer-events-none">
         <vue-slider
           v-model="currentDate"
           :max="period"

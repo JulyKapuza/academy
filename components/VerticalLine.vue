@@ -7,7 +7,7 @@
       tooltip="none"
       direction="ttb"
       :height="300"
-      class="horisontal"
+      class="pointer-events-none"
     ></vue-slider>
   </div>
 </template>
