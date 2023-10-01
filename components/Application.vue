@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto px-4 md:w-[500px] mr-[91px]">
+  <div class="mx-auto px-4 md:w-[500px] md:mr-[91px]">
     <h4 class="text-[23px] font-bold mb-6">
       Залиште заявку, і ми підберемо для вас умови зі знижкою
     </h4>

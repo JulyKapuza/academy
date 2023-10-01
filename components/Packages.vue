@@ -1,7 +1,7 @@
 <template>
   <div class="bg-grey">
     <div class="md:w-[800px] mx-auto mb-10">
-      <h2 class="text-[24px] text-[42px] font-bold text-center mb-4">
+      <h2 class="text-[24px] md:text-[42px] font-bold text-center mb-4">
         Переплата На Вищу Бухгалтерську Онлайн-Академію
       </h2>
       <p class="text-[21px] font-bold text-center font-['Raleway']">

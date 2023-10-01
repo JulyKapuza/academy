@@ -10,7 +10,7 @@
       </h1>
       <ui-btn> Обрати навчання >> </ui-btn>
     </div>
-    <div class="md:hidden">
+    <div class="md:hidden overflow-x-scroll">
       <swiper
         :slidesPerView="2"
         :spaceBetween="5"
