@@ -4,40 +4,42 @@
       <p class="text-[17px] text-black mb-[22px] font-['Raleway']">
         Вища Бухгалтерська Online-академія
       </p>
-      <h1 class="text-[24px] md:text-[42px] font-bold mb-[22px] leading-[150%] px-10">
+      <h1
+        class="text-[24px] md:text-[42px] font-bold mb-[22px] leading-[150%] px-10"
+      >
         <span class="block w-[100%]">Підвищення кваліфікації</span>
         та профперепідготовка для бухгалтерів
       </h1>
       <ui-btn> Обрати навчання >> </ui-btn>
     </div>
-    
-  <div class="md:hidden ">
-        <swiper
-          :slidesPerView="2"
-          :spaceBetween="5"
-          :centeredSlides="true"
-          :modules="modules"
-          class="w-full mb-5 flex !overflow-y-visible pb-4 pt-5"
-        >
-          <swiper-slide
-            ><img src="/file/prof.png" alt="" height="594" width="290"
-          /></swiper-slide>
-          <swiper-slide
-            ><img
-              src="/file/lec.png"
-              alt=""
-              height="594"
-              width="290"
-              class="-mt-[27px] mb-[27px]" /></swiper-slide
-          ><swiper-slide >
-            <img src="/file/increase.png" alt="" height="594" width="290"
-          /></swiper-slide>
-        </swiper>
-      </div>
-  
+
+    <div class="md:hidden">
+      <swiper
+        :slidesPerView="2"
+        :spaceBetween="5"
+        :centeredSlides="true"
+        :modules="modules"
+        class="w-full mb-5 flex !overflow-y-visible pb-4 pt-5"
+      >
+        <swiper-slide
+          ><img src="/file/prof.png" alt="" height="594" width="290"
+        /></swiper-slide>
+        <swiper-slide
+          ><img
+            src="/file/lec.png"
+            alt=""
+            height="594"
+            width="290"
+            class="-mt-[27px] mb-[27px]" /></swiper-slide
+        ><swiper-slide>
+          <img src="/file/increase.png" alt="" height="594" width="290"
+        /></swiper-slide>
+      </swiper>
+    </div>
+
     <div class="hidden md:flex justify-center gap-[26px] pt-[47px] mb-10">
       <img src="/file/prof.png" alt="photo" height="594" />
-      <img  src="/file/lec.png" alt="photo" class="-mt-[47px] mb-[47px]" />
+      <img src="/file/lec.png" alt="photo" class="-mt-[47px] mb-[47px]" />
       <img src="/file/increase.png" alt="photo" />
     </div>
     <div class="md:w-[889px] text-center mx-auto px-[60px]">

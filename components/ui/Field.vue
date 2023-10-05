@@ -17,7 +17,9 @@
         @blur="emits('blur'), (isFocused = false)"
         @input="emitValue"
       />
-      <div class="absolute text-xs text-red top-[110%] start-0 font-['Raleway']">
+      <div
+        class="absolute text-xs text-red top-[110%] start-0 font-['Raleway']"
+      >
         {{ error }}
       </div>
     </div>
